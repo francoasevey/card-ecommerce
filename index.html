@@ -34,7 +34,7 @@
 
     <section class="home">
         <div class="home-img">
-            <img src="/images/4.png" alt="" class="one">
+            <img src="/images/main.png" alt="" class="one">
         </div>
 
         <div class="home-text">
@@ -47,18 +47,24 @@
 
     <div class="main">
         <div class="row">
-            <li><img src="/images/2.png" alt=""></li>
+            <li><img src="/images/1.png" alt="" onclick="slider('/images/1.png')"></li>
         </div>
 
         <div class="row row2">
-            <li><img src="/images/2.png" alt=""></li>
+            <li><img src="/images/2.png" alt="" onclick="slider('/images/2.png')"></li>
         </div>
 
         <div class="row row3">
-            <li><img src="/images/2.png" alt=""></li>
+            <li><img src="/images/3.png" alt="" onclick="slider('/images/3.png')"></li>
         </div>
     </div>
 
     <a href="#" class="bottom">Scroll Down<i class='bx bx-down-arrow-circle'></i></a>
+    
+    <script type="text/javascript">
+        function slider(anything){
+            document.querySelector('.one').src = anything
+        };
+    </script>
 </body>
 </html>
